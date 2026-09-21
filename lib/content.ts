@@ -50,11 +50,11 @@ export const projects: Project[] = [
     category: "Web app with React and Node.js",
     description:
       "A full-stack e-commerce web application built with React, Node.js, Express, and PostgreSql. It features user authentication, product listings, shopping cart functionality, and order management.",
-    tags: ["React", "Node.js", "Express", "PostgreSQL"],
-    live: "",
+tags: ["React", "Node.js", "Express", "PostgreSQL"],
+    live: "#",
     github: "https://github.com/aashish-mgr/E-commerce_backend",
     accent: "teal",
-    image: "/ecom.png"
+    image: "/ecom.png",
   },
   {
     title: "Job Portal",
