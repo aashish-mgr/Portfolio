@@ -4,7 +4,6 @@ import { motion, MotionConfig } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { hero } from "@/lib/content";
 
-
 const entrance = {
   duration: 0.8,
   ease: [0.22, 1, 0.36, 1],
@@ -13,22 +12,22 @@ const entrance = {
 export function Hero() {
   return (
     <MotionConfig reducedMotion="user">
-      <section className="py-20 sm:py-28">
-        <div className="mx-auto grid max-w-6xl items-center gap-14 px-6 lg:grid-cols-12">
+      <section id="home" className="py-20 sm:py-28">
+        <div className="mx-auto max-w-6xl px-6">
           <motion.div
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={entrance}
-            className="lg:col-span-7"
+            className="max-w-3xl"
           >
-            <h1 className="font-display text-5xl font-medium leading-[1.04] tracking-[-0.015em] text-ink sm:text-6xl lg:text-[4.5rem]">
+            <h1 className="font-display text-4xl font-medium leading-[1.06] tracking-[-0.015em] text-ink sm:text-6xl lg:text-[4.5rem]">
               Aashish{" "}
               <span className="font-display italic text-gold">Magar</span>
             </h1>
             <p className="mt-5 font-mono text-sm tracking-wide text-teal">
               {hero.tagline}
             </p>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-muted">
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
               {hero.intro}
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-5">
@@ -50,15 +49,6 @@ export function Hero() {
               <li>based in Kathmandu, Nepal</li>
               <li>open to remote work</li>
             </ul>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.98 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ ...entrance, delay: 0.12 }}
-            className="lg:col-span-5"
-          >
-           
           </motion.div>
         </div>
       </section>

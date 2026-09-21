@@ -34,14 +34,12 @@ export function Contact() {
           <Reveal>
             <SectionHeader
               eyebrow="contact"
-              title="Let's talk data — or the web"
+              title="Let's talk the web"
             />
           </Reveal>
           <Reveal delay={0.08}>
             <p className="mt-6 max-w-md leading-relaxed text-muted">
-              Open to junior analyst roles, freelance MERN work, or a quick chat
-              about a dataset you are stuck on. Drop a message and I will reply
-              within a couple of days.
+              If you have a project in mind, or just want to say hi, feel free to reach out. I’m always open to discussing new ideas, creative projects, or opportunities to be part of your visions.
             </p>
             <ul className="mt-8 space-y-4">
               {contactLinks.map((link) => (

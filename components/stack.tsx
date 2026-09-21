@@ -2,7 +2,7 @@ import { stack } from "@/lib/content";
 
 export function Stack() {
   return (
-    <section id="stack" className="border-y border-line bg-surface/70">
+    <section id="stack" className="scroll-mt-24 border-y border-line bg-surface/70">
       <div className="mx-auto max-w-6xl px-6 py-14 sm:py-16">
         <div className="grid gap-8 sm:grid-cols-2">
           <div className="rounded-md border border-line bg-elevated/40 p-6 sm:p-7">

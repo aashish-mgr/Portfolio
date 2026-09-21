@@ -38,7 +38,13 @@
         rgba(217, 164, 65, 0.05),
         transparent 60%
       );
-    background-attachment: fixed;
+    background-attachment: scroll;
+  }
+
+  @media (min-width: 768px) {
+    body {
+      background-attachment: fixed;
+    }
   }
 
   ::selection {

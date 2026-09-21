@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
+import { Navbar } from "@/components/navbar";
 import "./globals.css";
 
 const plexSans = IBM_Plex_Sans({
@@ -24,9 +25,9 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Aashu Lopchan — Aspiring Data Analyst · Full-Stack Developer",
+  title: "Aashish Magar —  Full-Stack Developer",
   description:
-    "Portfolio of Aashu Lopchan, a Nepal-based MERN full-stack developer and self-taught data analyst working with Excel, SQL and Python.",
+    "Portfolio of Aashish Magar, a Nepal-based MERN full-stack developer.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -36,7 +37,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       data-scroll-behavior="smooth"
       className={`dark ${plexSans.variable} ${plexMono.variable} ${fraunces.variable}`}
     >
-      <body className="min-h-dvh flex flex-col">{children}</body>
+      <body className="min-h-dvh flex flex-col">
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

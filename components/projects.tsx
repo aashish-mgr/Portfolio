@@ -33,8 +33,8 @@ export function Projects() {
         />
       </Reveal>
 
-      <div className="mt-14 grid gap-10 lg:grid-cols-12 lg:items-center">
-        <div className="relative h-80 overflow-hidden rounded-lg border border-line bg-elevated/50 sm:h-96 lg:col-span-6">
+      <div className="mt-12 grid gap-10 lg:mt-14 lg:grid-cols-12 lg:items-center">
+        <div className="relative h-64 overflow-hidden rounded-lg border border-line bg-elevated/50 sm:h-96 lg:col-span-6">
           {featured.image ? (
             <Image
               src={featured.image}
