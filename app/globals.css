@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-base: #0b1310;
+  --color-surface: #141c19;
+  --color-elevated: #1b2622;
+  --color-line: #26322d;
+  --color-ink: #e9e6de;
+  --color-muted: #9ca59f;
+  --color-faint: #74807a;
+  --color-gold: #d9a441;
+  --color-teal: #3e8e8c;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-plex-sans);
+  --font-mono: var(--font-plex-mono);
+  --font-display: var(--font-fraunces);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    scroll-behavior: smooth;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    @apply bg-base text-ink font-sans antialiased;
+    background-image:
+      radial-gradient(
+        1100px 560px at 88% -8%,
+        rgba(62, 142, 140, 0.09),
+        transparent 62%
+      ),
+      radial-gradient(
+        900px 480px at -8% 112%,
+        rgba(217, 164, 65, 0.05),
+        transparent 60%
+      );
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background-color: rgba(217, 164, 65, 0.3);
+    color: #e9e6de;
+  }
 }
