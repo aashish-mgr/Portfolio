@@ -1,12 +1,19 @@
-"use client"
-import { motion } from 'framer-motion';
+import { Contact } from "@/components/contact";
+import { Footer } from "@/components/footer";
+import { Hero } from "@/components/hero";
+import { Projects } from "@/components/projects";
+import { Stack } from "@/components/stack";
 
 export default function Home() {
   return (
     <>
-     <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-  Hello
-</motion.h1>
+      <main className="flex-1">
+        <Hero />
+        <Stack />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
     </>
   );
 }
