@@ -7,10 +7,10 @@ export function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 px-6 py-12 sm:flex-row sm:items-center">
         <div>
           <p className="font-display text-xl font-medium text-ink">
-            Aashu Lopchan
+            Aashish <span className="italic text-gold">Magar</span>
           </p>
           <p className="mt-1 font-mono text-xs text-faint">
-            data analysis · full-stack web
+             Full Stack Developer
           </p>
         </div>
         <nav className="flex items-center gap-6 text-sm">
@@ -50,7 +50,7 @@ export function Footer() {
       <div className="border-t border-line">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-5 sm:flex-row sm:items-center sm:justify-between">
           <p className="font-mono text-xs text-faint">
-            © 2026 Aashu Lopchan
+            © 2026 Aashish Magar
           </p>
           <p className="font-mono text-xs text-faint">
             built with Next.js · Tailwind · Framer Motion

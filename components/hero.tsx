@@ -3,7 +3,7 @@
 import { motion, MotionConfig } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { hero } from "@/lib/content";
-import { HeroChart } from "./hero-chart";
+
 
 const entrance = {
   duration: 0.8,
@@ -22,8 +22,8 @@ export function Hero() {
             className="lg:col-span-7"
           >
             <h1 className="font-display text-5xl font-medium leading-[1.04] tracking-[-0.015em] text-ink sm:text-6xl lg:text-[4.5rem]">
-              Aashu{" "}
-              <span className="font-display italic text-gold">Lopchan</span>
+              Aashish{" "}
+              <span className="font-display italic text-gold">Magar</span>
             </h1>
             <p className="mt-5 font-mono text-sm tracking-wide text-teal">
               {hero.tagline}
@@ -48,10 +48,7 @@ export function Hero() {
             </div>
             <ul className="mt-12 flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-line pt-6 font-mono text-xs text-faint">
               <li>based in Kathmandu, Nepal</li>
-              <li className="h-1 w-1 rounded-full bg-teal/70" aria-hidden />
-              <li>self-taught in Excel · SQL · Python</li>
-              <li className="h-1 w-1 rounded-full bg-teal/70" aria-hidden />
-              <li>working toward a data career</li>
+              <li>open to remote work</li>
             </ul>
           </motion.div>
 
@@ -61,7 +58,7 @@ export function Hero() {
             transition={{ ...entrance, delay: 0.12 }}
             className="lg:col-span-5"
           >
-            <HeroChart />
+           
           </motion.div>
         </div>
       </section>

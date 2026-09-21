@@ -6,6 +6,7 @@ import { ProjectMock } from "./project-mock";
 import { Reveal } from "./reveal";
 import { Section } from "./section";
 import { SectionHeader } from "./section-header";
+import Image from "next/image";
 
 function ProjectTags({ tags }: { tags: string[] }) {
   return (
@@ -56,13 +57,23 @@ export function Projects() {
       </Reveal>
 
       <div className="mt-14 grid gap-10 lg:grid-cols-12 lg:items-center">
-        <div className="relative lg:col-span-6">
-          <div className="flex h-80 items-end overflow-hidden rounded-lg border border-line bg-elevated/50 sm:h-96">
+        <div className="relative h-80 overflow-hidden rounded-lg border border-line bg-elevated/50 sm:h-96 lg:col-span-6">
+          {featured.image ? (
+            <Image
+              src={featured.image}
+              alt={`${featured.title} screenshot`}
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover object-top"
+            />
+          ) : (
             <ProjectMock variant="bars" />
-          </div>
-          <span className="absolute bottom-3 right-4 font-mono text-[11px] text-faint">
-            [project screenshot placeholder]
-          </span>
+          )}
+          {!featured.image && (
+            <span className="absolute bottom-3 right-4 font-mono text-[11px] text-faint">
+              [project screenshot placeholder]
+            </span>
+          )}
         </div>
         <div className="lg:col-span-6">
           <p className="font-mono text-xs text-teal">{featured.category}</p>
@@ -78,18 +89,28 @@ export function Projects() {
       </div>
 
       <div className="mt-10 grid gap-8 md:grid-cols-2">
-        {rest.map((project) => (
+        {rest.map((project, index) => (
           <article
             key={project.title}
             className="overflow-hidden rounded-lg border border-line bg-surface"
           >
             <div className="relative h-56 border-b border-line bg-elevated/50">
-              <ProjectMock
-                variant={project.title === "Task Tracker App" ? "board" : "mixed"}
-              />
-              <span className="absolute bottom-3 right-4 font-mono text-[11px] text-faint">
-                [project screenshot placeholder]
-              </span>
+              {project.image ? (
+                <Image
+                  src={project.image}
+                  alt={`${project.title} screenshot`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover object-top"
+                />
+              ) : (
+                <ProjectMock variant={index === 0 ? "board" : "mixed"} />
+              )}
+              {!project.image && (
+                <span className="absolute bottom-3 right-4 font-mono text-[11px] text-faint">
+                  [project screenshot placeholder]
+                </span>
+              )}
             </div>
             <div className="p-6 sm:p-7">
               <p className="font-mono text-xs text-gold">{project.category}</p>

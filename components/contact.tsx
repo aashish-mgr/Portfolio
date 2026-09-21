@@ -1,7 +1,6 @@
 import { Mail } from "lucide-react";
 import { socials } from "@/lib/content";
 import { GithubIcon, LinkedinIcon } from "./brand-icons";
-import { ContactForm } from "./contact-form";
 import { Reveal } from "./reveal";
 import { Section } from "./section";
 import { SectionHeader } from "./section-header";
@@ -15,13 +14,13 @@ const contactLinks = [
   },
   {
     label: "github",
-    value: "github.com/aashulopchan",
+    value: "https://github.com/aashish-mgr",
     href: socials.github,
     icon: GithubIcon,
   },
   {
     label: "linkedin",
-    value: "linkedin.com/in/aashulopchan",
+    value: "https://www.linkedin.com/in/aashish-mgr/",
     href: socials.linkedin,
     icon: LinkedinIcon,
   },
@@ -68,9 +67,6 @@ export function Contact() {
             </ul>
           </Reveal>
         </div>
-        <Reveal delay={0.1}>
-          <ContactForm />
-        </Reveal>
       </div>
     </Section>
   );
