@@ -9,9 +9,7 @@ export function Footer() {
           <p className="font-display text-xl font-medium text-ink">
             Aashish <span className="italic text-gold">Magar</span>
           </p>
-          <p className="mt-1 font-mono text-xs text-faint">
-             Full Stack Developer
-          </p>
+          <p className="mt-1 font-mono text-xs text-faint">Full-Stack Developer</p>
         </div>
         <nav className="flex items-center gap-6 text-sm">
           <a

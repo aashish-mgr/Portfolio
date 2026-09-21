@@ -2,7 +2,7 @@ export const hero = {
   name: "Aashish Magar",
   tagline: "Full-Stack Developer",
   intro:
-    "Nepal-based MERN full-stack developer . I spend my days building web apps with the MERN stack .",
+    "Nepal-based MERN full-stack developer. I spend my days building web apps with the MERN stack.",
 };
 
 export const socials = {
@@ -14,12 +14,12 @@ export const socials = {
 export const stack = {
   dev: [
     { name: "MongoDB", note: "schemas · aggregation pipelines" },
-    { name: "PostgreSQL", note: "schemas · queries · joins"},
+    { name: "PostgreSQL", note: "schemas · queries · joins" },
     { name: "Express", note: "REST APIs · middleware" },
     { name: "React", note: "components · hooks · state" },
     { name: "Node.js", note: "server logic · background jobs" },
-    { name: "Next.js", note: "SSR · SSG · ISR · API routes"},
-  ]
+    { name: "Next.js", note: "SSR · SSG · ISR · API routes" },
+  ],
 };
 
 export interface Project {
@@ -39,7 +39,7 @@ export const projects: Project[] = [
     category: "Full-stack web application",
     description:
       "A finance management system that allows users to track their income, expenses, and savings. It provides features such as budget planning, financial goal setting, and visual reports to help users manage their finances effectively.",
-    tags: ["PostgreSql", "Express", "React"],
+    tags: ["PostgreSQL", "Express", "React"],
     live: "",
     github: "https://github.com/aashish-mgr/FMS-backend",
     accent: "gold",
@@ -49,9 +49,9 @@ export const projects: Project[] = [
     title: "E-commerce",
     category: "Web app with React and Node.js",
     description:
-      "A full-stack e-commerce web application built with React, Node.js, Express, and PostgreSql. It features user authentication, product listings, shopping cart functionality, and order management.",
-tags: ["React", "Node.js", "Express", "PostgreSQL"],
-    live: "#",
+      "A full-stack e-commerce web application built with React, Node.js, Express, and PostgreSQL. It features user authentication, product listings, shopping cart functionality, and order management.",
+    tags: ["React", "Node.js", "Express", "PostgreSQL"],
+    live: "",
     github: "https://github.com/aashish-mgr/E-commerce_backend",
     accent: "teal",
     image: "/ecom.png",
@@ -65,8 +65,6 @@ tags: ["React", "Node.js", "Express", "PostgreSQL"],
     live: "",
     github: "https://github.com/aashish-mgr/jobportal",
     accent: "teal",
-    image: "/jobportal.png"
+    image: "/jobportal.png",
   },
 ];
-
-

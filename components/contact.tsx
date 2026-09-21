@@ -14,13 +14,13 @@ const contactLinks = [
   },
   {
     label: "github",
-    value: "https://github.com/aashish-mgr",
+    value: socials.github,
     href: socials.github,
     icon: GithubIcon,
   },
   {
     label: "linkedin",
-    value: "https://www.linkedin.com/in/aashish-mgr/",
+    value: socials.linkedin,
     href: socials.linkedin,
     icon: LinkedinIcon,
   },
@@ -28,18 +28,17 @@ const contactLinks = [
 
 export function Contact() {
   return (
-    <Section id="contact" className="scroll-mt-24 bg-base">
+    <Section id="contact" className="bg-base">
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
         <div>
           <Reveal>
-            <SectionHeader
-              eyebrow="contact"
-              title="Let's talk the web"
-            />
+            <SectionHeader eyebrow="contact" title="Let's talk the web" />
           </Reveal>
           <Reveal delay={0.08}>
             <p className="mt-6 max-w-md leading-relaxed text-muted">
-              If you have a project in mind, or just want to say hi, feel free to reach out. I’m always open to discussing new ideas, creative projects, or opportunities to be part of your visions.
+              If you have a project in mind, or just want to say hi, feel free
+              to reach out. I&rsquo;m always open to discussing new ideas,
+              creative projects, or opportunities to be part of your visions.
             </p>
             <ul className="mt-8 space-y-4">
               {contactLinks.map((link) => (

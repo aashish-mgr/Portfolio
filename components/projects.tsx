@@ -25,7 +25,7 @@ export function Projects() {
   const [featured, ...rest] = projects;
 
   return (
-    <Section id="projects" className="scroll-mt-24 bg-base">
+    <Section id="projects" className="bg-base">
       <Reveal>
         <SectionHeader
           eyebrow="work"
