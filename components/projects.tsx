@@ -1,7 +1,5 @@
-import { ArrowUpRight } from "lucide-react";
-import type { Project } from "@/lib/content";
 import { projects } from "@/lib/content";
-import { GithubIcon } from "./brand-icons";
+import { ProjectLinks } from "./project-links";
 import { ProjectMock } from "./project-mock";
 import { Reveal } from "./reveal";
 import { Section } from "./section";
@@ -20,27 +18,6 @@ function ProjectTags({ tags }: { tags: string[] }) {
         </li>
       ))}
     </ul>
-  );
-}
-
-function ProjectLinks({ project }: { project: Project }) {
-  return (
-    <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2">
-      <a
-        href={project.github}
-        className="inline-flex items-center gap-1.5 text-sm text-teal transition hover:text-teal/80"
-      >
-        <GithubIcon size={15} />
-        GitHub
-      </a>
-      <a
-        href={project.live}
-        className="inline-flex items-center gap-1.5 text-sm text-muted transition hover:text-ink"
-      >
-        <ArrowUpRight size={15} aria-hidden />
-        Live
-      </a>
-    </div>
   );
 }
 

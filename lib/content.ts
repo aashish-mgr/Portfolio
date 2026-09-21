@@ -40,7 +40,7 @@ export const projects: Project[] = [
     description:
       "A finance management system that allows users to track their income, expenses, and savings. It provides features such as budget planning, financial goal setting, and visual reports to help users manage their finances effectively.",
     tags: ["PostgreSql", "Express", "React"],
-    live: "#",
+    live: "",
     github: "https://github.com/aashish-mgr/FMS-backend",
     accent: "gold",
     image: "/fms.png",
@@ -51,9 +51,10 @@ export const projects: Project[] = [
     description:
       "A full-stack e-commerce web application built with React, Node.js, Express, and PostgreSql. It features user authentication, product listings, shopping cart functionality, and order management.",
     tags: ["React", "Node.js", "Express", "PostgreSQL"],
-    live: "#",
+    live: "",
     github: "https://github.com/aashish-mgr/E-commerce_backend",
     accent: "teal",
+    image: "/ecom.png"
   },
   {
     title: "Job Portal",
@@ -61,9 +62,10 @@ export const projects: Project[] = [
     description:
       "A job portal that connects job seekers with employers. It allows users to create profiles, search for job listings, and apply for positions. Employers can post job openings, review applications, and manage their hiring process.",
     tags: ["React", "Node.js", "Express", "PostgreSQL"],
-    live: "#",
+    live: "",
     github: "https://github.com/aashish-mgr/jobportal",
     accent: "teal",
+    image: "/jobportal.png"
   },
 ];
 
