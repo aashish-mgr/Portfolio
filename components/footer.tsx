@@ -1,5 +1,5 @@
-import { Github, Linkedin } from "lucide-react";
 import { socials } from "@/lib/content";
+import { GithubIcon, LinkedinIcon } from "./brand-icons";
 
 export function Footer() {
   return (
@@ -36,14 +36,14 @@ export function Footer() {
             aria-label="GitHub"
             className="text-muted transition hover:text-ink"
           >
-            <Github size={18} />
+            <GithubIcon size={18} />
           </a>
           <a
             href={socials.linkedin}
             aria-label="LinkedIn"
             className="text-muted transition hover:text-ink"
           >
-            <Linkedin size={18} />
+            <LinkedinIcon size={18} />
           </a>
         </div>
       </div>

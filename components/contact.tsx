@@ -1,5 +1,6 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import { socials } from "@/lib/content";
+import { GithubIcon, LinkedinIcon } from "./brand-icons";
 import { ContactForm } from "./contact-form";
 import { Reveal } from "./reveal";
 import { Section } from "./section";
@@ -16,13 +17,13 @@ const contactLinks = [
     label: "github",
     value: "github.com/aashulopchan",
     href: socials.github,
-    icon: Github,
+    icon: GithubIcon,
   },
   {
     label: "linkedin",
     value: "linkedin.com/in/aashulopchan",
     href: socials.linkedin,
-    icon: Linkedin,
+    icon: LinkedinIcon,
   },
 ];
 

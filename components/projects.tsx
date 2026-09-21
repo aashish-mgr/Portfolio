@@ -1,6 +1,7 @@
-import { ArrowUpRight, Github } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import type { Project } from "@/lib/content";
 import { projects } from "@/lib/content";
+import { GithubIcon } from "./brand-icons";
 import { ProjectMock } from "./project-mock";
 import { Reveal } from "./reveal";
 import { Section } from "./section";
@@ -28,7 +29,7 @@ function ProjectLinks({ project }: { project: Project }) {
         href={project.github}
         className="inline-flex items-center gap-1.5 text-sm text-teal transition hover:text-teal/80"
       >
-        <Github size={15} aria-hidden />
+        <GithubIcon size={15} />
         GitHub
       </a>
       <a
