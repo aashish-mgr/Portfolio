@@ -51,7 +51,7 @@ export const projects: Project[] = [
     description:
       "A full-stack e-commerce web application built with React, Node.js, Express, and PostgreSQL. It features user authentication, product listings, shopping cart functionality, and order management.",
     tags: ["React", "Node.js", "Express", "PostgreSQL"],
-    live: "",
+    live: "https://kinaunp.vercel.app/",
     github: "https://github.com/aashish-mgr/E-commerce_backend",
     accent: "teal",
     image: "/ecom.png",
