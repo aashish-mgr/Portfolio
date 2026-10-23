@@ -67,4 +67,15 @@ export const projects: Project[] = [
     accent: "teal",
     image: "/jobportal.png",
   },
+  {
+    title: "Chat Application",
+    category: "Real-time messaging app",
+    description:
+      "A real-time chat application that allows users to communicate instantly. It features user authentication, private and group chats, and message notifications.",
+    tags: ["Nextjs", "Node.js", "Express", "Socket.io"],
+    live: "",
+    github: "",
+    accent: "teal",
+    image: "/chatapp.png",
+  }
 ];
